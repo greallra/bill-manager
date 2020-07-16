@@ -7,7 +7,7 @@ const log = console.log;
 //on heroku process.env.NODE_ENV ='production'
 //in test environment process.env.NODE_ENV ='test'
 //if neither, process.env.NODE_ENV = 'development
-process.env.NODE_ENV = process.env.NODE_ENV || 'test'
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 console.log("NODE ENV----",process.env.NODE_ENV)
 if(process.env.NODE_ENV ==='test') {
   require('dotenv').config({path: '.env.test'})
@@ -15,6 +15,8 @@ if(process.env.NODE_ENV ==='test') {
   require('dotenv').config({path: '.env.dev'})
 }
 log(process.env)
+
+//must also consider heroku env vars: https://www.udemy.com/course/react-2nd-edition/learn/lecture/7900270#questions/7775482
 
 module.exports = (env)=>{
  const isProduction = env === 'production';
