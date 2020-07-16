@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 public/dist/
 notes.md
+.env.test
+.env.dev

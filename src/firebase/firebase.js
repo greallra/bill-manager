@@ -10,7 +10,7 @@ const configENV = {
   appId: process.env.FIREBASE_APP_ID
 
 };
-console.log("***************** configENV", configENV);
+
 
 firebase.initializeApp(configENV);
 
