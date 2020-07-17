@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { addExpense,startSetExpenses } from './actions/expenses';
+import { startSetExpenses} from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
@@ -22,10 +22,11 @@ import database from './firebase/firebase.js';
 // console.log(visibleExpenses);
 
 const store = configureStore();
-// store.dispatch(startSetExpenses())
-// .then((x)=>{
-//   console.log("x",x);
-// })
+
+
+// Modify the 'first' and 'last' properties, but leave other data at
+// adaNameRef unchanged.
+
 
 const jsx = (
   <Provider store={store}>
