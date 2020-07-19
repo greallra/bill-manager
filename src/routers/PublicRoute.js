@@ -16,7 +16,7 @@ export const PublicRoute = (
             <Redirect to="/dashboard"/>
             ) : (
             <div>
-                <Header />
+                {/* <Header /> */}
                 <Component {...props}/>
             </div>
             )

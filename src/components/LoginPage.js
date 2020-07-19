@@ -3,11 +3,15 @@ import {connect} from 'react-redux';
 import {startLogin} from '../actions/auth'
 
 export function LoginPage(props) {
-    return <div>
-        <button onClick={props.startLogin}>
-            login
+    return <div className="box_layout">
+        <div className="box-layout__box">
+            <h1 className="box-layout__title">Bill Manger</h1>
+            <p>Get your bills under control</p>
+            <button onClick={props.startLogin}>
+                login
 
-        </button>
+            </button>
+        </div>
     </div>
 }
 
