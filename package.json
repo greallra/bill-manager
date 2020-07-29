@@ -2,7 +2,7 @@
   "name": "bill-manager",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Ronan Greally",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",

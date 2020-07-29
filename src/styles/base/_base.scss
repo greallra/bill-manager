@@ -1,6 +1,12 @@
 html {
   font-size: 62.5%;
 }
+@mixin width {
+  // max-width: 800px;
+  // margin: auto;
+  padding: 20px 100px;
+  // background-color: #f7f7f7;
+}
 
 body {
   color: $dark-grey;
@@ -19,4 +25,61 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+}
+.dash {
+  
+}
+.button {
+  background: #1c88bf;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 1.2rem;
+    text-decoration: none;
+    margin: 10px 0 20px;
+}
+h3 {
+  font-size: x-large;
+  font-weight: 300;
+  padding: 20px 0;
+}
+.expense-list-cont {
+  @include width;
+  display: flex;
+
+  input[type=text] {
+    flex-grow: 1;
+    border: 1px solid #cacccd;
+  }
+  select {
+    flex-grow: 1;
+    border: 1px solid #cacccd;
+  }
+  .DateRangePicker{
+    flex-grow: 1;
+  }
+}
+.expense-list-cont2 {
+  @include width;
+}
+.add-expense-cont {
+  @include width;
+  
+}
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  input[type=text], textarea{
+    height: 40px;
+    margin: 10px 0;
+    border: 1px solid #cacccd;
+  }
+  button {
+    // height: 40px;
+    // width: 150px;
+  }
 }

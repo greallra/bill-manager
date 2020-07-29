@@ -1,0 +1,16 @@
+header {
+    background-color: #2b2222;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    button {
+        background-color: #2b2222;
+        color: white;
+        border: none;
+    }
+}

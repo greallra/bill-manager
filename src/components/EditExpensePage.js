@@ -14,12 +14,12 @@ export class EditExpensePage extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="add-expense-cont">
         <ExpenseForm
           expense={this.props.expense}
           onSubmit={this.onSubmit}
         />
-        <button onClick={this.onRemove}>Remove</button>
+        <button onClick={this.onRemove} className="button">Remove</button>
       </div>
     );
   }

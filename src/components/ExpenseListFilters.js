@@ -26,7 +26,7 @@ export class ExpenseListFilters extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="expense-list-cont">
         <input
           type="text"
           value={this.props.filters.text}
